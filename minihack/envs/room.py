@@ -105,12 +105,12 @@ class MinihackRoom10x10Random(MiniHackRoom):
         super().__init__(*args, size=10, random=True, **kwargs)
 
 register(
-    id="Minihack-Room-10x10-v0",
+    id="MiniHack-Room-10x10-v0",
     entry_point = "minihack.envs.room:MinihackRoom10x10"
 )
 
 register(
-    id="Minihack-Room-Random-10x10-v0",
+    id="MiniHack-Room-Random-10x10-v0",
     entry_point = "minihack.envs.room:MinihackRoom10x10Random"
 )
 
