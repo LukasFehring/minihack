@@ -104,15 +104,70 @@ class MinihackRoom10x10Random(MiniHackRoom):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, size=10, random=True, **kwargs)
 
-register(
-    id="MiniHack-Room-10x10-v0",
-    entry_point = "minihack.envs.room:MinihackRoom10x10"
-)
 
-register(
-    id="MiniHack-Room-Random-10x10-v0",
-    entry_point = "minihack.envs.room:MinihackRoom10x10Random"
-)
+register(id="MiniHack-Room-10x10-v0", entry_point="minihack.envs.room:MinihackRoom10x10")
+
+register(id="MiniHack-Room-Random-10x10-v0", entry_point="minihack.envs.room:MinihackRoom10x10Random")
+
+
+class MinihackRoom11x11(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=False, **kwargs)
+
+
+class MinihackRoom11x11Random(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=True, **kwargs)
+
+
+register(id="MiniHack-Room-11x11-v0", entry_point="minihack.envs.room:MinihackRoom10x10")
+
+register(id="MiniHack-Room-Random-11x11-v0", entry_point="minihack.envs.room:MinihackRoom10x10Random")
+
+
+class MinihackRoom12x12(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=False, **kwargs)
+
+
+class MinihackRoom12x12Random(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=True, **kwargs)
+
+
+register(id="MiniHack-Room-12x12-v0", entry_point="minihack.envs.room:MinihackRoom12x12")
+
+register(id="MiniHack-Room-Random-12x12-v0", entry_point="minihack.envs.room:MinihackRoom12x12Random")
+
+
+class MinihackRoom13x13(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=False, **kwargs)
+
+
+class MinihackRoom13x13Random(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=True, **kwargs)
+
+
+register(id="MiniHack-Room-13x13-v0", entry_point="minihack.envs.room:MinihackRoom13x13")
+
+register(id="MiniHack-Room-Random-13x13-v0", entry_point="minihack.envs.room:MinihackRoom13x13Random")
+
+
+class MinihackRoom14x14(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=False, **kwargs)
+
+
+class MinihackRoom14x14Random(MiniHackRoom):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, size=10, random=True, **kwargs)
+
+
+register(id="MiniHack-Room-14x14-v0", entry_point="minihack.envs.room:MinihackRoom14x14")
+
+register(id="MiniHack-Room-Random-14x14-v0", entry_point="minihack.envs.room:MinihackRoom14x14Random")
 
 
 class MiniHackRoom15x15(MiniHackRoom):
