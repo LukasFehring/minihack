@@ -357,7 +357,7 @@ class MiniHack(NetHackStaircase):
             self.seed(seed, seed, reseed=False)
         import sys
 
-        self.seed(random.randint(0, sys.maxsize), random.randint(0, sys.maxsize))
+        self.seed(self.rng.integers(sys.maxsize), self.rng.integers(sys.maxsize), reseed=False)
         return super().reset(*args, **kwargs)
 
     def _reward_fn(self, last_observation, action, observation, end_status):
