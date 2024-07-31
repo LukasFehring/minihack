@@ -349,6 +349,9 @@ class MiniHack(NetHackStaircase):
 
         return obs_space_dict
 
+    def create_np_rng(self, seed):
+        self.rng = np.random.default_rng(seed)
+
     def reset(self, *args, sample_seed=True, **kwargs):
         if self.reward_manager is not None:
             self.reward_manager.reset()
